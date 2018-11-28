@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/main.css" />
+<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+</head>
+<body>
+    <main>
+        <header >
+          <img id= "moviedb" alt="The movie Database" title="db" class=iconic iconic-md data-src="img/themoviedb.svg"/>
+           <h1 class="mainHeader">Get Movie Recommendations</h1>
+            <div class="flow">
+            <div class="backbuttondiv"> 
+            <img id="back-button" alt="Back Button" title="Back" class="iconic iconic-md" data-src="img/arrow-thick.svg"/>
+            </div>
+            
+             <div class="searchButtonDiv">
+                 <img id="search-button" alt="Search" title="Search" class="iconic iconic-md" data-src="img/magnifying-glass.svg"/>
+            </div>
+            
+            <input type="text" id="search-input" placeholder="search" />
+            <div id= "button"><img  id="button" alt="Sort" title="Sort" class="iconic" data-src="img/sort.svg" />
+            </div>
+            </div>
+        </header>
+        
+         <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+       
+    </section>
+        
+        <div class="page" id="search-results">
+            <section class="title"></section>
+            <section class="content flex-container"></section>
+        </div>
+        
+        <div class="page" id="recommend-results">
+            <section class="title"></section>
+            <section class="content flex-container"></section>
+        </div>
+        
+        <div class="overlay hide">&nbsp;</div>
+
+<div class="modal off">
+  <div class="modal-header">
+    <h2>Category</h2>
+  </div>
+  <div class="modal-radio">
+    <input type="radio" name="cheese" value="movie" id="movie" checked>
+    <label for="movie">Movie</label>
+
+    <input type="radio" name="cheese" value="tv" id="tv" checked>
+    <label for="tv">Tv</label>
+  </div>
+  <button class="cancelButton">Cancel</button>
+  <button class="saveButton">Save</button>
+
+</div>
+    </main>
+ 
+    
+    <div class="attribution">
+       
+    </div>
+    
+    <script src="js/iconic.min.js"></script>
+    <script src="js/key.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
